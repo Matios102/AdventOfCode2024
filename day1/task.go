@@ -11,7 +11,7 @@ const MaxUint = ^uint(0)
 const MaxInt = int(MaxUint >> 1)
 
 
-func Task1(filePath string) (int, int, error) {
+func Task(filePath string) (int, int, error) {
 	x,y,err := loadDataTask1(filePath)
 	if err != nil {
 		fmt.Printf("An error ocurred: %s", err)

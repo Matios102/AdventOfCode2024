@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func Task2(filePath string) (int, int, error) {
+func Task(filePath string) (int, int, error) {
 	data, err := loadDataTask2(filePath)
 	if err != nil {
 		return 0, 0, err
@@ -135,4 +135,11 @@ func loadDataTask2(filepath string) ([][]int, error) {
 	}
 
 	return res, nil
+}
+
+func abs(a int) int {
+	if a < 0 {
+		return -a
+	}
+	return a
 }
